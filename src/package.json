@@ -1,0 +1,14 @@
+{
+  "name": "on2cook-kitchen-management",
+  "version": "1.0.0",
+  "description": "Kitchen management system for On2Cook",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "date-fns": "^2.30.0",
+    "lucide-react": "^0.263.1",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^1.2.1",
+    "tailwind-merge": "^1.14.0"
+  }
+}

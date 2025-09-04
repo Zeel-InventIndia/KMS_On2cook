@@ -1,0 +1,36 @@
+export interface DemoRequest {
+  id: string;
+  clientName: string;
+  clientMobile: string;
+  clientEmail: string;
+  assignee: string;
+  demoDate: string;
+  demoTime?: string;
+  recipes: string[];
+  salesRep: string;
+  leadStatus: 'demo_planned' | 'demo_rescheduled' | 'demo_cancelled' | 'demo_given';
+  specialTag?: 'QSR' | 'Cloud kitchen' | 'business';
+  type: 'demo' | 'deployment' | 'recipe_development';
+  demoMode?: 'onsite' | 'virtual';
+  notes?: string;
+  assignedTeam?: number;
+  assignedSlot?: string;
+  assignedMember?: string;
+  status: 'pending' | 'assigned' | 'in_progress' | 'completed';
+  completedBy?: string;
+  completedAt?: string;
+  mediaUploaded?: boolean;
+  dropboxLink?: string;
+  mediaLink?: string;
+  previousStatus?: 'demo_planned' | 'demo_rescheduled' | 'demo_cancelled' | 'demo_given';
+  statusChangedAt?: string;
+  statusChangedBy?: string;
+  assignedMembers?: string[];
+  gridRow?: number;
+  gridCol?: number;
+  scheduledTeam?: string;
+  scheduledTimeSlot?: string;
+  source?: 'demo_schedule' | 'kitchen_request';
+  createdBy?: string;
+  createdAt?: string;
+}
